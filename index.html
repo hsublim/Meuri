@@ -691,7 +691,7 @@ li > *:last-child {
 }
 
 
-</style><title>index.html</title>
+</style><title>Meuri</title></title>
 </head>
 <body class='typora-export'><div class='typora-export-content'>
 <div id='write'  class=''><h1 id='meuri-perceptual-neural-audio-coding-with-modified-discrete-cosine-transform'><span>Meuri: Perceptual Neural Audio Coding with Modified Discrete Cosine Transform</span></h1><h4 id='under-review'><span>Under Review</span></h4><p><span> </span></p><h2 id='abstract'><span>Abstract</span></h2><p><span>Despite efforts to leverage the modeling power of deep neural networks (DNNs) on audio coding, effectively deploying them in real-world applications is still problematic due to their high computational cost and the restricted range of target signals or achievable bit-rates. In this paper, we propose an alternative approach for integrating DNNs into a perceptual audio codec that allows for the optimization of the whole system in a data-driven, and end-to-end manner. The key idea of the proposed method is to make DNNs control the quantization noise in the classic transform coding framework, specifically based on the modified discrete cosine transform (MDCT). The proposal includes a new DNN-based mechanism for adaptively adjusting the quantization step sizes of frequency bands targeting an arbitrary bit-rate, eventually acting as a data-driven differentiable psychoacoustic model. The side information regarding the adaptive quantization is also encoded and decoded by DNNs via latent variables. The perceptual distortion during training is evaluated by a perceptual quality estimation model trained on actual human ratings so that the proposed audio codec can effectively allocate bits considering their effect on the perceptual quality. Through comparisons with legacy audio codecs (MP3 and AAC) and a neural audio codec (EnCodec), we show that our method can achieve further coding gains over the legacy codecs with a substantially lower computational load on the decoder compared to other neural audio codecs.</span></p><p>&nbsp;</p>
@@ -722,12 +722,15 @@ li > *:last-child {
     <tbody> 
       <tr>
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="Reference/so_easy.wav" type="audio/wav"></audio></td>
+
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="MP3/32kbps/so_easy.mp3" type="audio/wav"></audio></td>
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="AAC/32kbps/so_easy_32k.m4a" type="audio/wav"></audio></td>
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="Meuri/32kbps_12k/so_easy_32kbps.wav" type="audio/wav"></audio></td>
+
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="MP3/48kbps/so_easy.mp3" type="audio/wav"></audio></td>
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="AAC/48kbps/so_easy_48k.m4a" type="audio/wav"></audio></td>
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="Meuri/48kbps_14k/so_easy_48kbps.wav" type="audio/wav"></audio></td>
+
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="MP3/64kbps/so_easy.mp3" type="audio/wav"></audio></td>
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="AAC/64kbps/so_easy_64k.m4a" type="audio/wav"></audio></td>
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="Meuri/64kbps_14k/so_easy_64kbps.wav" type="audio/wav"></audio></td>
@@ -735,12 +738,15 @@ li > *:last-child {
 
       <tr>
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="Reference/good_time.wav" type="audio/wav"></audio></td>
+
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="MP3/32kbps/good_time.mp3" type="audio/wav"></audio></td>
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="AAC/32kbps/good_time_32k.m4a" type="audio/wav"></audio></td>
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="Meuri/32kbps_12k/good_time_32kbps.wav" type="audio/wav"></audio></td>
+
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="MP3/48kbps/good_time.mp3" type="audio/wav"></audio></td>
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="AAC/48kbps/good_time_48k.m4a" type="audio/wav"></audio></td>
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="Meuri/48kbps_14k/good_time_48kbps.wav" type="audio/wav"></audio></td>
+
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="MP3/64kbps/good_time.mp3" type="audio/wav"></audio></td>
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="AAC/64kbps/good_time_64k.m4a" type="audio/wav"></audio></td>
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="Meuri/64kbps_14k/good_time_64kbps.wav" type="audio/wav"></audio></td>
@@ -748,12 +754,15 @@ li > *:last-child {
 
       <tr>
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="Reference/heart_peripheral.wav" type="audio/wav"></audio></td>
+
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="MP3/32kbps/heart_peripheral.mp3" type="audio/wav"></audio></td>
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="AAC/32kbps/heart_peripheral_32k.m4a" type="audio/wav"></audio></td>
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="Meuri/32kbps_12k/heart_peripheral_32kbps.wav" type="audio/wav"></audio></td>
+
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="MP3/48kbps/heart_peripheral.mp3" type="audio/wav"></audio></td>
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="AAC/48kbps/heart_peripheral_48k.m4a" type="audio/wav"></audio></td>
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="Meuri/48kbps_14k/heart_peripheral_48kbps.wav" type="audio/wav"></audio></td>
+
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="MP3/64kbps/heart_peripheral.mp3" type="audio/wav"></audio></td>
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="AAC/64kbps/heart_peripheral_64k.m4a" type="audio/wav"></audio></td>
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="Meuri/64kbps_14k/heart_peripheral_64kbps.wav" type="audio/wav"></audio></td>
@@ -761,12 +770,15 @@ li > *:last-child {
 
       <tr>
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="Reference/we'll_talk_about_it_all_tonight.wav" type="audio/wav"></audio></td>
+
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="MP3/32kbps/we'll_talk_about_it_all_tonight.mp3" type="audio/wav"></audio></td>
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="AAC/32kbps/we'll_talk_about_it_all_tonight_32k.m4a" type="audio/wav"></audio></td>
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="Meuri/32kbps_12k/we'll_talk_about_it_all_tonight_32kbps.wav" type="audio/wav"></audio></td>
+
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="MP3/48kbps/we'll_talk_about_it_all_tonight.mp3" type="audio/wav"></audio></td>
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="AAC/48kbps/we'll_talk_about_it_all_tonight_48k.m4a" type="audio/wav"></audio></td>
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="Meuri/48kbps_14k/we'll_talk_about_it_all_tonight_48kbps.wav" type="audio/wav"></audio></td>
+
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="MP3/64kbps/we'll_talk_about_it_all_tonight.mp3" type="audio/wav"></audio></td>
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="AAC/64kbps/we'll_talk_about_it_all_tonight_64k.m4a" type="audio/wav"></audio></td>
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="Meuri/64kbps_14k/we'll_talk_about_it_all_tonight_64kbps.wav" type="audio/wav"></audio></td>
@@ -776,7 +788,7 @@ li > *:last-child {
   </table></figure>
   (Audio source: <A href="https://sigsep.github.io/datasets/musdb.html"> MUSDB18-HQ</A>)
 
-  <br>
+  <br><br>
 
   <h2 id='audio-samples'><span>Environment Sound</span></h2>
   <figure class='table-figure'>
@@ -784,9 +796,9 @@ li > *:last-child {
     <thead>
       <tr>
         <th style='text-align:center;' rowspan="2"><span>Reference</span></th>
-        <th style='text-align:center;' colspan="3"><span>32 kbps</span></th>
-        <th style='text-align:center;' colspan="3"><span>48 kbps</span></th>
-        <th style='text-align:center;' colspan="3"><span>64 kbps</span></th>
+        <th style='text-align:center;' colspan="3"><span>32 kbps mono</span></th>
+        <th style='text-align:center;' colspan="3"><span>48 kbps mono</span></th>
+        <th style='text-align:center;' colspan="3"><span>64 kbps mono</span></th>
       </tr>
       <tr>
         <th style='text-align:center;'><span>MP3</span></th>
@@ -809,7 +821,7 @@ li > *:last-child {
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="Meuri/32kbps_12k/07059113_32kbps.wav" type="audio/wav"></audio></td>
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="MP3/48kbps/07059113.mp3" type="audio/wav"></audio></td>
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="AAC/48kbps/07059113_48k.m4a" type="audio/wav"></audio></td>
-        <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="Meuri/48kbps_14k/0705911348kbps.wav" type="audio/wav"></audio></td>
+        <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="Meuri/48kbps_14k/07059113_48kbps.wav" type="audio/wav"></audio></td>
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="MP3/64kbps/07059113.mp3" type="audio/wav"></audio></td>
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="AAC/64kbps/07059113_64k.m4a" type="audio/wav"></audio></td>
         <td style='text-align:center;' ><audio controls style="width: 210px;"><source src="Meuri/64kbps_14k/07059113_64kbps.wav" type="audio/wav"></audio></td>
@@ -857,7 +869,6 @@ li > *:last-child {
     </tbody>
   </table></figure>
   (Audio source: <A href="https://sound-effects.bbcrewind.co.uk/"> BBC Sound Effects</A>)
-
 
 <p>&nbsp;</p></div></div>  
 </body>
